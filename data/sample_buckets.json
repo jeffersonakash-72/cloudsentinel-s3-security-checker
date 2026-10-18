@@ -1,0 +1,62 @@
+[
+  {
+    "bucket_name": "company-public-website-assets",
+    "region": "ap-south-1",
+    "public_access_block": {
+      "block_public_acls": false,
+      "ignore_public_acls": false,
+      "block_public_policy": false,
+      "restrict_public_buckets": false
+    },
+    "encryption": {
+      "enabled": false,
+      "algorithm": null
+    },
+    "versioning": "Disabled"
+  },
+  {
+    "bucket_name": "customer-invoices-prod",
+    "region": "ap-south-1",
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption": {
+      "enabled": true,
+      "algorithm": "aws:kms"
+    },
+    "versioning": "Enabled"
+  },
+  {
+    "bucket_name": "team-shared-documents",
+    "region": "us-east-1",
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": false,
+      "restrict_public_buckets": true
+    },
+    "encryption": {
+      "enabled": true,
+      "algorithm": "AES256"
+    },
+    "versioning": "Suspended"
+  },
+  {
+    "bucket_name": "application-logs-archive",
+    "region": "eu-west-1",
+    "public_access_block": {
+      "block_public_acls": true,
+      "ignore_public_acls": true,
+      "block_public_policy": true,
+      "restrict_public_buckets": true
+    },
+    "encryption": {
+      "enabled": true,
+      "algorithm": "AES256"
+    },
+    "versioning": "Disabled"
+  }
+]
