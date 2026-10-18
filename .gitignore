@@ -1,0 +1,23 @@
+# Python clutter
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+.venv/
+
+# Secrets: never commit these
+.env
+*.pem
+*.key
+.aws/
+credentials
+*credentials*.csv
+
+# Generated reports
+reports/
+
+# Mac clutter
+.DS_Store
+
+# Editor settings
+.vscode/
