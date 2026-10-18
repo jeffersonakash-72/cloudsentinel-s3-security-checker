@@ -60,6 +60,15 @@ python3 -m cloudsentinel.main --input data/sample_buckets.json --output reports/
 ```
 
 ## Example Result
+### Terminal report
+
+![Terminal report](docs/terminal-report.png)
+
+### Tests passing
+
+![Tests passing](docs/tests-passing.png)
+
+### Summary
 
 Summary for the four sample buckets:
 
